@@ -47,9 +47,7 @@ autoreconf -iv .
 %install
 %make_install
 
-mv $RPM_BUILD_ROOT%{_docdir}/*/*.{txt,xml} .
-
-mv $RPM_BUILD_ROOT%{_docdir}/xproxymanagementprotocol/PM_spec .
+mv $RPM_BUILD_ROOT%{_docdir}/xorgproto/* .
 
 # keep things building even if you have the html doc tools for xmlto installed
 rm -f $RPM_BUILD_ROOT%{_docdir}/*/*.{html,svg}
