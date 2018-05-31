@@ -4,6 +4,8 @@
 
 %global debug_package %{nil}
 
+%global protover 2018.4
+
 Summary: X.Org X11 Protocol headers
 Name: xorg-x11-proto-devel
 Version: 7.7.1.20
@@ -13,7 +15,7 @@ Group: Development/System
 URL: http://www.x.org
 BuildArch: noarch
 
-Source0:  http://xorg.freedesktop.org/archive/individual/proto/xorgproto-2018.4.tar.bz2
+Source0:  http://xorg.freedesktop.org/archive/individual/proto/xorgproto-%{protover}.tar.bz2
 
 Patch1: xorg-x11-proto-devel-add-evieproto.patch
 
@@ -33,7 +35,7 @@ X.Org X11 Protocol headers
 
 
 %prep
-%autosetup -n %{name}-%{version} -p1
+%autosetup -n xorgproto-%{protover} -p1
 
 %build
 
