@@ -45,8 +45,7 @@ autoreconf -iv .
 
 
 %install
-make DESTDIR=$RPM_BUILD_ROOT install-data
-install -m 444 COPYING-* .
+%make_install
 
 mv $RPM_BUILD_ROOT%{_docdir}/*/*.{txt,xml} .
 
