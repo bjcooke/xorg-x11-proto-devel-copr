@@ -33,7 +33,7 @@ X.Org X11 Protocol headers
 
 
 %prep
-%autosetup -q -c %{name}-%{version} -p1
+%autosetup -c %{name}-%{version} -p1
 
 %build
 
