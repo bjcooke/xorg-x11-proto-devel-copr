@@ -54,6 +54,7 @@ rm -f $RPM_BUILD_ROOT%{_docdir}/*/*.{html,svg}
 
 for f in applewmproto trapproto windowswmproto; do
 	rm -f $RPM_BUILD_ROOT%{_datadir}/pkgconfig/$f.pc
+	rm -f ./COPYING-$f
 done
 
 for f in \
