@@ -16,7 +16,7 @@ BuildArch: noarch
 Source0:  http://xorg.freedesktop.org/archive/individual/proto/xorgproto-2018.4.tar.bz2
 
 Patch1: presentproto-0001-Force-Window-and-Pixmap-to-be-CARD32-on-the-wire.patch
-Patch2: xorg-x11-proto-add-evieproto.patch
+Patch2: xorg-x11-proto-devel-add-evieproto.patch
 
 BuildRequires: autoconf automake
 BuildRequires: meson
